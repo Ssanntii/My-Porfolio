@@ -1,5 +1,7 @@
 import NavBar from "./NavBar"
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa"
+import mypic from "/mypic.jpg"
+import cv from "/My_CV.pdf"
 
 
 const Hero= () => {
@@ -32,41 +34,36 @@ const Hero= () => {
                             </h2>
                         </header>
                         <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-6">
-                            Pedilo Agu
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Reiciendis reprehenderit, in nesciunt beatae officia ea facilis vero!
+                                Voluptatibus sed, nulla, nisi odio voluptates illo, praesentium quod nostrum exercitationem in esse.
                         </p>
                         <div className="flex items-center space-x-4 mb-6">
-                            <a href="#">
+                            <a href={import.meta.env.VITE_GITHUB_URL}>
                                 <FaGithub alt="GitHub" color="#c744ec" className="w-11 h-11"/>
                             </a>
-                            <a href="#">
+                            <a href={import.meta.env.VITE_LINKEDIN_URL}>
                                 <FaLinkedin alt="LinkedIn" color="#c744ec" className="w-11 h-11"/>
                             </a>
-                            <a href="#">
-                                <FaFacebook alt="Facebook" color="#c744ec" className="w-11 h-11"/>
-                            </a>
-                            <a href="#">
+                            <a href={import.meta.env.VITE_INSTAGRAM_URL}>
                                 <FaInstagram alt="Instagram" color="#c744ec" className="w-11 h-11"/>
                             </a>
                         </div>
-                        <a href="{Santi} download">
+                        <a href={cv} download>
                             <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none
                             hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg">
                                 Download CV
                             </button>
                         </a>
                     </section>
-                    <figure
+                    <img
                         data-aos='fade-up'
                         data-aos-delay='500'
-                        className="flex-1 flex justify-center md:justify-end mt-0"
-                    >
-                        <img
-                            src="{imgHero}"
-                            alt="Hero Image"
-                            className="h-[300px] sm:h-[400px] md:h-[485px] w-[250px] sm:w-[480px] object-cover
-                            rounded-lg"
-                        />
-                    </figure>
+                        src={mypic}
+                        alt="My Pic"
+                        className="relative z-10 rounded-full max-h-full shadow-2xl transform
+                        transition-transform duration-500 ease-in-out hover:scale-110"
+                    />
                 </main>
         </div>
     )
