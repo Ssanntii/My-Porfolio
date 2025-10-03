@@ -1,16 +1,24 @@
-import react_icon from "/react_icon.png"
-import python_icon from "/python_icon.png"
-import nodejs_icon from "/nodejs_icon.png"
-import mysql_icon from "/mysql_icon.png"
+import html_icon from "/html_icon.png"
+import css_icon from "/css_icon.png"
 import tailwindcss_icon from "/tailwindcss_icon.png"
+import javascript_icon from "/javascript_icon.png"
+import react_icon from "/react_icon.png"
+import nodejs_icon from "/nodejs_icon.png"
+import express_icon from "/express_icon.png"
+import python_icon from "/python_icon.png"
+import mysql_icon from "/mysql_icon.png"
 import skills from "/skills.png"
 
 const skillsData = [
-    { id: 1, image: react_icon, title: 'React', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
-    { id: 2, image: tailwindcss_icon, title: 'Tailwindcss', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
-    { id: 3, image: nodejs_icon, title: 'Node.js', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
-    { id: 4, image: python_icon, title: 'Python', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
-    { id: 5, image: mysql_icon, title: 'MySQL', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
+    { id: 1, image: html_icon, title: 'HTML', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
+    { id: 2, image: css_icon, title: 'CSS', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
+    { id: 3, image: tailwindcss_icon, title: 'Tailwindcss', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
+    { id: 4, image: javascript_icon, title: 'Javascript', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
+    { id: 5, image: react_icon, title: 'React', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
+    { id: 6, image: nodejs_icon, title: 'Node.js', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
+    { id: 7, image: express_icon, title: 'Express', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
+    { id: 8, image: python_icon, title: 'Python', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
+    { id: 9, image: mysql_icon, title: 'MySQL', description: 'Lorem ipsum dolor sit amet, consecteur adipisicing elit. Ipsam, beatae?' },
 ]
 
 const SkillBox = ({ image, title, description }) => (
